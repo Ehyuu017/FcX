@@ -311,6 +311,20 @@ transition: color .4s;
   height: auto; /* Set the height to auto to maintain the aspect ratio */
 }
 
+/* Add media queries to adjust the image size on smaller screens */
+
+@media (max-width: 768px) {
+  .home__img-2 {
+    max-width: 120px; /* Adjust the maximum width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .home__img-2 {
+    max-width: 90px; /* Adjust the maximum width for even smaller screens */
+  }
+}
+
 .home__lines{
   position: absolute;
   top: 0;
