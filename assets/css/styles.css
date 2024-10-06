@@ -295,16 +295,20 @@ transition: color .4s;
 }
 
 .home__img-1{
-  width: 250px;
+  width: 100%; /* Set the width to 100% of the parent container */
+  max-width: 250px; /* Set a maximum width to prevent the image from getting too large */
   margin-left: 3.5rem;
+  height: auto; /* Set the height to auto to maintain the aspect ratio */
 }
 
 .home__img-2{
-  width: 150px;
+  width: 100%; /* Set the width to 100% of the parent container */
+  max-width: 150px; /* Set a maximum width to prevent the image from getting too large */
   border: 5px solid var(--black-color);
   position: absolute;
   left: 0;
   bottom: -3.5rem;
+  height: auto; /* Set the height to auto to maintain the aspect ratio */
 }
 
 .home__lines{
