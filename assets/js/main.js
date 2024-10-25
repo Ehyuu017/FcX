@@ -96,3 +96,23 @@ sr.reveal(`.home__images`,{origin: 'bottom', delay: 1000})
 sr.reveal(`.about__images, .contact__img`,{origin: 'left'})
 sr.reveal(`.about__data, .contact__data`,{origin: 'right'})
 sr.reveal(`.projects__card`,{interval: 100})
+
+
+/*=============== POPUP FORM ===============*/
+
+// Function to open the contact popup
+document.getElementById('open-popup').addEventListener('click', function() {
+    document.getElementById('contact-popup').style.display = 'block';
+});
+
+// Function to close the contact popup
+document.getElementById('close-popup').addEventListener('click', function() {
+    document.getElementById('contact-popup').style.display = 'none';
+});
+
+// Function to close the popup when the close button is clicked
+document.getElementById('close-popup-button').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent form submission
+    document.getElementById('contact-popup').style.display = 'none';
+});
+
