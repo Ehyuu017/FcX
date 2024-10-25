@@ -1145,11 +1145,9 @@ color: var(--white-color);
     grid-template-columns: repeat(2, 330px);
     justify-content: center;
     }
+  }
 }
 
-}
-  
-}
 
 
 
