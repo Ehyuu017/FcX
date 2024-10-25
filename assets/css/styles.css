@@ -1051,6 +1051,104 @@ color: var(--white-color);
     right: 3rem;
   }
 
+/*=============== POPUP FORM ===============*/
+
+.contact-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.contact-popup-content {
+  background-color: var(--white-color); /* White background for the popup */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%; /* Responsive width */
+  max-width: 500px; /* Max width for larger screens */
+}
+
+.close-popup {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333; /* Dark color for the close button */
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.close-popup:hover {
+  color: var(--first-color); /* Change color on hover */
+}
+
+.contact-popup h2 {
+  margin-bottom: 15px;
+}
+
+.contact-popup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-popup input,
+.contact-popup textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--black-border);
+  border-radius: 4px;
+}
+
+.contact-popup button {
+  background: var(--first-gradient);/* Primary button color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--white-color);
+  padding: 1rem 2rem;
+  transition: box-shadow .4s;
+}
+
+.contact-popup button:hover {
+  background-color: var(--second-color); /* Darker shade on hover */
+}
+
+/* For medium devices */
+@media screen and (max-width:540px){
+  .contact-popup,
+  .contact-popup-content{
+    grid-template-columns: 360px;
+    justify-content: center;
+    }
+  }
+
+  @media screen and (max-width:340px){
+    .contact-popup,
+    .contact-popup-content{
+      grid-template-columns: repeat(1, 200px);
+      justify-content: center;
+    }
+}
+
+@media screen and (max-width:768px){
+  .contact-popup,
+  .contact-popup-content{
+    grid-template-columns: repeat(2, 330px);
+    justify-content: center;
+    }
+}
+
+}
+  
 }
 
 
