@@ -1059,7 +1059,7 @@ color: var(--white-color);
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: Transparent; /* Semi-transparent background */
+  background-color: transparent; /* Semi-transparent background */
   display: flex;
   justify-content: center;
   align-items: center;
